@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>VC Enterprise Portfolio</title>
+     <!--Links-->
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="script.js"></script>
+
+     <header class="header">
+          <div class="header_content">
+               <a href="#" class="logo">The VC Ecperience</a>
+
+               <nav class="nav">
+                    <ul class="sidebar">
+                         <li class="nav_item" onclick= hideSidebar()>
+                              <a href="#banner" class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                         </li>
+                         <li class="nav_item">
+                              <a href="#portfolio" class="nav_link">Portfolio</a>
+                         </li>
+                         <li class="nav_item">
+                              <a href="#ourteam" class="nav_link">Investment Team</a>
+                         </li>
+                         <li class="nav_item" class="hideOnMobile">
+                              <a href="#ourteam" class="nav_link">Investment Team</a>
+                         </li>
+                         
+                    </ul>
+
+                    <ul class="nav_list">
+                         <li class="nav_item hide">
+                              <a href="#banner" class="nav_link">Mission Statement</a>
+                         </li>
+                         <li class="nav_item hide">
+                              <a href="#portfolio" class="nav_link">Portfolio</a>
+                         </li>
+                         <li class="nav_item hide">
+                              <a href="#ourteam" class="btn">Investment Team</a>
+                         </li>
+                         <li onclick = showSidebar() class="menu-button"><a href="#" class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+               </nav>
+          </div>
+     </header>
+
+     <script>
+          function showSidebar(){
+               const sidebar = document.querySelector('.sidebar')
+               sidebar.style.display = 'flex'
+          }
+          function hideSidebar(){
+               const sidebar = document.querySelector('.sidebar')
+               sidebar.style.display = 'none'
+          }
+     </script>
+
+     <!--Main-->
+     <main class="main">
+
+          <!--Banner-->
+          <section class="banner" id="banner">
+               <div class="heading">
+                    <h1 class="banner_heading">The VC Ecperience</h1>
+                    <p class="banner_text">Our Fund is committed to the furthering entreprenuers in the mobility sector</p>
+               </div>
+          </section>
+
+          <!--Portfolio-->
+          <section class="portfolio" id="portfolio">
+
+               <div class="portfolio_container">
+                    <div class="portfolio_heading">
+                         <h1 class="prt_header">Our Mobility Portfolio</h1>
+                         <p class="prt.text">Impacting diverse sectors of mobility to better the human experience and the world we inhabit</p>
+                    </div>
+                    <div class="image_container">
+                         <div class="img">
+                              <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/hangar.jpg" alt="AeroArgonauts">
+                              <h2>AeroArgonauts</h2>
+                         </div>
+                         <div class="img">
+                              <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/dashboard.jpg" alt="AutoBueno">
+                              <h2>AutoBueno</h2>
+                         </div>
+                         <div class="img">
+                              <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-lights.jpg" alt="LaneChatter">
+                              <h2>LaneChatter</h2>
+                         </div>
+                         <div class="img">
+                              <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/tires.jpg" alt="TigerTreads">
+                              <h2>TigerTreads</h2>
+                         </div>
+                         <div class="img">
+                              <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/truck.jpg" alt="AeroArgonauts">
+                              <h2>ValetToday</h2>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="ourteam">
+               <div class="team_container" id="ourteam">
+                    <h2>Our Team</h2>
+                    <div class="team_banner">
+                         <div class="team_img_container">
+                              <div class="team_member">
+                                   <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-one.jpg" alt="">
+                                   <h3 class="tm_text">Lisa Fischer</h3>
+                                   <p class="tm_text">CEO - Founder and Principal Investor</p>
+                              </div>
+                              <div class="team_member">
+                                   <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-two.jpg" alt="">
+                                   <h3 class="tm_text">Alex Lasker</h3>
+                                   <p class="tm_text">Partner - Research & Development</p>
+                              </div>
+                              <div class="team_member">
+                                   <img src="https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/employee-three.jpg" alt="">
+                                   <h3 class="tm_text">Omar Carlsen</h3>
+                                   <p class="tm_text">Partner - Partnerships & Marketing</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer class="footer">
+          <div class="footer_text">
+               <h2>The VC Experience</h2>
+               <p>introduction@vcexperience.investors</p>
+               <p>555-867-5309</p>
+          </div>
+          <div class="copyright">copyright VC Enterprises 2020</div>
+     </footer>
+     
+</body>
+</html>
